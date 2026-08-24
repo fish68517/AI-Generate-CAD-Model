@@ -1,0 +1,31 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+
+# Tooling caches
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE and OS files
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+
+# Local logs
+*.log
+
+# Large local assets and experiment outputs
+CADmium/
+models/
+experiments/
+reports/
+data/
+
+# Local media exports
+*.mp4

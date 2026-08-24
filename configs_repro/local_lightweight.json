@@ -1,0 +1,28 @@
+{
+  "seed": 42,
+  "dataset": "chandar-lab/CADmium-ds",
+  "split": "test",
+  "sample_count": 20,
+  "samples_per_category": 4,
+  "scan_limit": 2000,
+  "tokenizer": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "max_length": 768,
+  "adapter": "chandar-lab/CADmium-1.5B",
+  "inference": {
+    "max_input_tokens": 768,
+    "max_new_tokens": 128,
+    "do_sample": false,
+    "mode_order": [
+      "cuda-4bit",
+      "cpu-int8",
+      "cpu-fp32",
+      "metadata"
+    ]
+  },
+  "reconstruction": {
+    "arc_segments": 32,
+    "circle_segments": 64,
+    "boolean_engine": "manifold",
+    "export_html": true
+  }
+}

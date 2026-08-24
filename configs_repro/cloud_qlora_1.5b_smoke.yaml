@@ -1,0 +1,57 @@
+# Resource-optimized single-GPU smoke configuration; not the paper's fp16/FSDP setup.
+# data/cloud_smoke is generated from the 20 fixed test samples only to validate code.
+# Never report its loss or output as a formal model-quality result.
+seed: 42
+name: cloud-qlora-1.5b-smoke
+
+data:
+  train_qwen_tokenized_parquet_path: data/cloud_smoke/train.parquet
+  validation_qwen_tokenized_parquet_path: data/cloud_smoke/validation.parquet
+  test_qwen_tokenized_parquet_path: data/cloud_smoke/test.parquet
+  max_n_datapoints_val: 64
+  max_length: 4096
+
+model:
+  size: 1.5
+  model_name: Qwen/Qwen2.5-Coder-1.5B-Instruct
+  quantize:
+    load_in_4bit: true
+    bnb_4bit_quant_type: nf4
+    bnb_4bit_use_double_quant: true
+    bnb_4bit_compute_dtype: bfloat16
+  lora:
+    r: 64
+    lora_alpha: 16
+    target_modules: all-linear
+    lora_dropout: 0.05
+    bias: none
+    task_type: CAUSAL_LM
+
+training:
+  output_dir: experiments/cloud-qlora-1.5b-smoke
+  report_to: none
+  label_names: [labels]
+  remove_unused_columns: false
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 16
+  gradient_checkpointing: true
+  learning_rate: 0.0002
+  max_steps: 20
+  warmup_steps: 2
+  bf16: true
+  fp16: false
+  eval_strategy: steps
+  eval_steps: 20
+  logging_steps: 1
+  logging_first_step: true
+  save_steps: 20
+  save_total_limit: 2
+  max_grad_norm: 0.3
+  weight_decay: 0.001
+  lr_scheduler_type: cosine
+  optim: paged_adamw_8bit
+
+wandb:
+  name: cloud-qlora-1.5b-smoke
+  runid: cloud-qlora-1.5b-smoke

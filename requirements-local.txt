@@ -1,0 +1,22 @@
+# 本机轻量复现环境（Windows / Python 3.10）
+# GPU 版 PyTorch 请按 doc/本机运行指南.md 单独安装，不要直接由本文件覆盖。
+torch==2.6.0
+numpy==1.26.4
+scipy==1.15.3
+pandas==2.3.3
+matplotlib==3.10.8
+plotly==6.3.1
+shapely==2.1.2
+trimesh==4.8.3
+mapbox-earcut==1.0.3
+manifold3d==3.2.1
+datasets==4.8.4
+pyarrow==21.0.0
+fsspec[http]==2026.2.0
+huggingface-hub==0.36.2
+transformers==4.41.2
+accelerate==0.31.0
+peft==0.11.1
+safetensors>=0.4.3
+bitsandbytes==0.48.2
+protobuf==5.29.6

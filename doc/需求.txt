@@ -1,0 +1,6 @@
+- 例子跑起来时的过程需要详细的步骤
+- 以及例子的结果可视化
+- 论文、代码、模型链接如下：
+https://arxiv.org/abs/2507.09792
+https://github.com/chandar-lab/CADmium
+https://huggingface.co/collections/chandar-lab/cadmium
