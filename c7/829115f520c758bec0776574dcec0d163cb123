@@ -1,0 +1,77 @@
+doc/规划复现方案.md
+  s_98844035b6e6a8::t_1d3ba77e0783bf 1-683
+project2/.gitignore
+  s_98844035b6e6a8::t_ae9f3d13cb4bb6 1-9
+project2/README.md
+  s_98844035b6e6a8::t_455b2ea870538f 1-14
+project2/configs/local.json
+  s_98844035b6e6a8::t_51314630195013 1-15
+project2/manifests/figure4_cases.jsonl
+  s_98844035b6e6a8::t_afebb8217a2d98 1-5
+project2/manifests/figure4_results_template.jsonl
+  s_98844035b6e6a8::t_40fe158c680ce6 1-10
+project2/manifests/figure5_cases.jsonl
+  s_98844035b6e6a8::t_1896318b8553b9 1
+project2/requirements-local.txt
+  s_98844035b6e6a8::t_1d5e61ea4d62fe 1-9
+project2/run_local_pipeline.ps1
+  s_98844035b6e6a8::t_5ba4aa40284382 1-30
+project2/scripts/__init__.py
+  s_98844035b6e6a8::t_a65dd060f8d830 1-2
+project2/scripts/check_local_environment.py
+  s_98844035b6e6a8::t_33494efc263389 1-89
+project2/scripts/code_safety.py
+  s_98844035b6e6a8::t_ac6d657ac315b4 1-117
+project2/scripts/common.py
+  s_98844035b6e6a8::t_a213f82b6117ce 1-62
+project2/scripts/compute_iou_best.py
+  s_98844035b6e6a8::t_c63d69da75aef6 1-95
+project2/scripts/create_fillet_oracle.py
+  s_98844035b6e6a8::t_42991ab9f3dd06 1-44
+project2/scripts/extract_cadquery_code.py
+  s_98844035b6e6a8::t_8c31f135455fc1 1-43
+project2/scripts/prepare_official_subset.py
+  s_98844035b6e6a8::t_d4f06210e170dc 1-279
+project2/scripts/process_figure4_gpu_results.py
+  s_98844035b6e6a8::t_11ae4bb21c79e6 1-102
+project2/scripts/render_figure4_grid.py
+  s_98844035b6e6a8::t_dd169b5e4d7e06 1-107
+project2/scripts/render_figure5_grid.py
+  s_98844035b6e6a8::t_15e13520431cf7 1-93
+project2/scripts/render_step.py
+  s_98844035b6e6a8::t_058e7479d20abf 1-82
+project2/scripts/run_local_pipeline.py
+  s_98844035b6e6a8::t_9ba599aba1861f 1-180
+project2/scripts/safe_execute_cadquery.py
+  s_98844035b6e6a8::t_69250d08349aea 1-150
+project2/scripts/verify_fillet.py
+  s_98844035b6e6a8::t_f661086235f4f2 1-63
+project2/tests/conftest.py
+  s_98844035b6e6a8::t_30ec2686d56b44 1-10
+project2/tests/test_cadquery_metrics.py
+  s_98844035b6e6a8::t_ca32e2329b90d7 1-31
+project2/tests/test_code_extraction.py
+  s_98844035b6e6a8::t_0ec2573420122c 1-21
+project2/tests/test_code_safety.py
+  s_98844035b6e6a8::t_e0cc1b2b7b09f4 1-31
+project2/tests/test_selection.py
+  s_98844035b6e6a8::t_73bcea8d9adbf0 1-50
+project2/复现操作步骤.md
+  s_98844035b6e6a8::t_64fd8fb96faed3 1-450
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "c7829115f520c758bec0776574dcec0d163cb123",
+  "prompts": {},
+  "sessions": {
+    "s_98844035b6e6a8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ff5d8-c938-73f2-a867-0fbb90af8246",
+        "model": "unknown"
+      },
+      "human_author": "yuhongwen <Hongwen_Yu.sgmwh@saic-gm.com>"
+    }
+  }
+}
