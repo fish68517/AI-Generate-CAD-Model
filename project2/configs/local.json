@@ -1,0 +1,15 @@
+{
+  "paper": "arXiv:2505.14646v1",
+  "official_repository": "https://github.com/anniedoris/CAD-Coder",
+  "official_commit": "7f40b4827b029731ef97313a116d62519e313960",
+  "sample_count": 5,
+  "cadquery_timeout_seconds": 60,
+  "fillet_radius": 0.01,
+  "render": {
+    "elevation": 25.0,
+    "azimuth": -45.0,
+    "dpi": 180,
+    "tolerance": 0.001
+  }
+}
+
